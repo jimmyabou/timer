@@ -8,10 +8,10 @@ const validArray = array.filter(element => {
   const value = Number(element);
   return !isNaN(value) && value >= 0;
 });
-//console.log(validArray);
+console.log(validArray);
 if (validArray.length > 0); {
   for (let i = 0; i < validArray.length; i++) {
-    timer = array[i];
+    timer = validArray[i];
     setTimeout(() => {
       process.stdout.write('.\n');
 
